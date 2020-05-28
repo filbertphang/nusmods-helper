@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "NUSMods Helper",
+    "version": "1.0",
+    "description": "Converts module names on the NUS website to links to their respective NUSMods module page.",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.nus.edu.sg/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
